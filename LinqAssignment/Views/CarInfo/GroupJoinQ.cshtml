@@ -1,0 +1,28 @@
+﻿@model IEnumerable<LinqAssignment.Models.ViewModels.GroupJoinVM>
+
+@{
+    ViewBag.Title = "GroupJoinQ";
+}
+
+<h2>GroupJoin Query Syntax</h2>
+
+@foreach (var item in Model)
+{
+<div class="row">
+    <div class="col-lg-3"><h3>@item.CarManufacturer.Name</h3></div>
+    <div class="col-lg-3"><h3>@item.CarManufacturer.Headquarters</h3></div>
+</div>
+<div>
+    @foreach (var carbrand in item.CarBrands)
+    {
+        <div class="row">
+            <div class="col-lg-3">Name: @carbrand.Name</div>
+            <div class="col-lg-3">Combined Value: @carbrand.Combined</div>
+        </div>
+    }
+</div>
+<div class="row">
+    **********************************************************************************
+    **********************************
+</div>
+}

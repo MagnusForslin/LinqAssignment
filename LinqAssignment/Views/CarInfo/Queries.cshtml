@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "Queries";
+}
+
+<h2>Queries</h2>
+
+<div class="row">
+    <div class="row">
+        <div class="nav navbar-nav col-lg-5">
+            <h3>Method Syntax</h3>
+        </div>
+        <div class="nav navbar-nav col-lg-5">
+            <h3>Query Syntax</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="nav navbar-nav col-lg-5">
+            @Html.ActionLink("Most efficient car - DONE", "MostEfficient", "CarInfo")
+        </div>
+        <div class="nav navbar-nav col-lg-5">
+            @Html.ActionLink("Most efficient car QS - DONE", "MostEfficientQ", "CarInfo")
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="nav navbar-nav col-lg-5">
+            @Html.ActionLink("Most efficient car by manufacturer and year - DONE", "WhereAndFirst", "CarInfo")
+        </div>
+        <div class="nav navbar-nav col-lg-5">
+            @Html.ActionLink("Most efficient car by manufacturer and year QS - DONE", "WhereAndFirstQ", "CarInfo")
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="nav navbar-nav col-lg-5">
+            @Html.ActionLink("Projected Select - DONE", "ProjectedSelect", "CarInfo")
+        </div>
+        <div class="nav navbar-nav col-lg-5">
+            @Html.ActionLink("Projected Select QS - DONE", "ProjectedSelectQ", "CarInfo")
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="nav navbar-nav col-lg-5">
+            @Html.ActionLink("SelectMany", "SelectMany", "CarInfo")
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="nav navbar-nav col-lg-5">
+            @Html.ActionLink("JoinTables", "JoinTables", "CarInfo")
+        </div>
+        <div class="nav navbar-nav col-lg-5">
+            @Html.ActionLink("JoinTables QS", "JoinTablesQ", "CarInfo")
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="nav navbar-nav col-lg-5">
+            @Html.ActionLink("Group Order", "Grouping", "CarInfo")
+        </div>
+        <div class="nav navbar-nav col-lg-5">
+            @Html.ActionLink("Group Order QS", "GroupingQ", "CarInfo")
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="nav navbar-nav col-lg-5">
+            @Html.ActionLink("GroupJoin", "GroupJoin", "CarInfo")
+        </div>
+        <div class="nav navbar-nav col-lg-5">
+            @Html.ActionLink("GroupJoin QS", "GroupJoinQ", "CarInfo")
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="nav navbar-nav col-lg-5">
+            @Html.ActionLink("GroupJoin SelectMany", "GroupJoinSelectMany", "CarInfo")
+        </div>
+        <div class="nav navbar-nav col-lg-5">
+            @Html.ActionLink("GroupJoin SelectMany QS", "GroupJoinSelectManyQ", "CarInfo")
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="nav navbar-nav col-lg-5">
+            @Html.ActionLink("Aggregating Data and Group", "AggregatingData", "CarInfo")
+        </div>
+        <div class="nav navbar-nav col-lg-5">
+            @Html.ActionLink("Aggregating Data and Group QS", "AggregatingDataQ", "CarInfo")
+        </div>
+    </div>
+</div>
+
